@@ -10,6 +10,7 @@ namespace TestGitHub.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Message = "Hi " + Request.LogonUserIdentity.Name;
             return View();
         }
 
